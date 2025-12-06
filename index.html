@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starry Wedding Invite</title>
+    
+    <!-- ★★★ 強制重設版面：解決靠左問題 ★★★ -->
+    <style>
+      html, body, #root {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* 確保容器是區塊元素，讓內部的 Flex 置中生效 */
+        display: block; 
+      }
+    </style>
+
+    <!-- ★★★ 關鍵是這一行！加入 Tailwind CSS 樣式庫 ★★★ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 這一行請保持原本的樣子，通常是 src/main.tsx 或 src/main.jsx -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
